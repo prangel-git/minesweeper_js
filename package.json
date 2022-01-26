@@ -1,0 +1,19 @@
+{
+  "name": "minesweeper",
+  "version": "1.0.0",
+  "description": "Minesweeper game in javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "standard --fix"
+  },
+  "keywords": [
+    "minesweeper"
+  ],
+  "author": "P.A. Rangel",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.4.7",
+    "standard": "^16.0.4"
+  }
+}
