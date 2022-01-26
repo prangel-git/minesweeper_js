@@ -1,4 +1,6 @@
-## From cyber-dojo.org
+## Minesweeper specifications
+
+Taken from cyber-dojo.org.
 
 Your task is to create a mine-sweeper style game.
 You start at the bottom of an 8x8 grid with 5 lives.
