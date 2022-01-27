@@ -34,3 +34,20 @@ A parameter holds the likelihood each square contains a mine:
 Your initial starting position at the bottom:
 - is randomly chosen
 - does not contain a mine
+
+## Installation
+
+```console
+# Clone repository
+git clone https://github.com/prangel-git/minesweeper_js.git
+cd minesweeper_js
+
+#Install npm project
+npm install
+
+# Run tests
+npm test
+
+# Run minesweeper
+node index.js
+```
