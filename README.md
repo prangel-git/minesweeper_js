@@ -42,7 +42,7 @@ Your initial starting position at the bottom:
 git clone https://github.com/prangel-git/minesweeper_js.git
 cd minesweeper_js
 
-#Install npm project
+# Install npm project
 npm install
 
 # Run tests
