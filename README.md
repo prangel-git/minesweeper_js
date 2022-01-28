@@ -1,6 +1,6 @@
-## Minesweeper specifications
+# Minesweeper specifications
 
-Taken from cyber-dojo.org.
+Taken from cyber-dojo.org:
 
 Your task is to create a mine-sweeper style game.
 You start at the bottom of an 8x8 grid with 5 lives.
@@ -35,19 +35,29 @@ Your initial starting position at the bottom:
 - is randomly chosen
 - does not contain a mine
 
-## Installation
+# Installation
+
+1. Clone repository
 
 ```console
-# Clone repository
 git clone https://github.com/prangel-git/minesweeper_js.git
 cd minesweeper_js
+```
 
-# Install npm project
+2. Install npm project
+
+```console
 npm install
+```
 
-# Run tests
+3. Run tests
+
+```console
 npm test
+```
 
-# Run minesweeper
+4. Run minesweeper
+
+```console
 node index.js
 ```
