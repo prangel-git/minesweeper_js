@@ -4,6 +4,7 @@
   "description": "Minesweeper game in javascript",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "jest",
     "lint": "standard --fix"
   },
@@ -15,5 +16,9 @@
   "devDependencies": {
     "jest": "^27.4.7",
     "standard": "^16.0.4"
+  },
+  "engines": {
+    "node": ">=17.0.0",
+    "npm": ">=8.0.0"
   }
 }
