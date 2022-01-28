@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "test": "jest",
-    "lint": "standard --fix"
+    "lint": "standard --fix",
+    "jsdoc": "jsdoc src -r"
   },
   "keywords": [
     "minesweeper"
@@ -15,6 +16,7 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^27.4.7",
+    "jsdoc": "^3.6.10",
     "standard": "^16.0.4"
   },
   "engines": {

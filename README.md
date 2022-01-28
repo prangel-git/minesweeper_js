@@ -61,3 +61,9 @@ npm test
 ```console
 node index.js
 ```
+
+5. Generate documentation
+
+```console
+npm run jsdoc
+```

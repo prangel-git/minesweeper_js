@@ -4,9 +4,9 @@ const { playerAction } = require('./playerAction')
 
 /**
  * Creates a new minesweepers game
- * @param {integer} width
- * @param {integer} height
- * @param {number} mineProbability
+ * @param {integer} width of the grid
+ * @param {integer} height of the grid
+ * @param {number} mineProbability a number from 0 to 1 with the probability that an element of the grid is a mine
  */
 async function minesweeperGame (width, height, mineProbability) {
   const environment = new Environment(width, height, mineProbability)

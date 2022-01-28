@@ -1,3 +1,7 @@
 const { minesweeperGame } = require('./src/minesweeperGame')
 
-minesweeperGame(8, 8, 1)
+const width = 8
+const height = 8
+const mineProbability = 1
+
+minesweeperGame(width, height, mineProbability)
