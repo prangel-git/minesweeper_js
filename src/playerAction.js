@@ -1,6 +1,6 @@
 /**
  * Reads an action from the keyboard
- * @param {ObservedState} observedState of the game
+ * @param {Object} observedState of the game
  * @returns The action taken by the player
  */
 async function playerAction (observedState) {

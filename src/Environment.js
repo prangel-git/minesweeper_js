@@ -8,9 +8,9 @@ const { positionAfterCommand, isPositionInBounds } = require('./Position')
 class Environment {
   /**
    * Generates an initial minesweep state
-   * @param {integer} width
-   * @param {integer} height
-   * @param {number} mineProbability: Probability of finding a mine outside the solution path.
+   * @param {Number} width integer
+   * @param {Number} height integer
+   * @param {Number} mineProbability: Probability of finding a mine outside the solution path.
    */
   constructor (width, height, mineProbability) {
     this.width = width
@@ -32,7 +32,7 @@ class Environment {
 
   /**
    * Updates environment after giving a command
-   * @param {UP, DOWN, RIGHT, LEFT} command Command given by the player
+   * @param {String} command Command given by the player. It can be 'UP', 'DOWN', 'RIGHT', 'LEFT'
    */
   updateAfterCommand (command) {
     const nextPosition = positionAfterCommand(this.playerPosition, command)
@@ -56,7 +56,7 @@ class Environment {
   /**
    * Overrides a position of the observable grid.
    * @param {Position} position to update
-   * @param {'*', 'o', 'O'} newState in that position
+   * @param {String} newState in that position. States can be 'O', 'o', '*'
    */
   updateObservableGrid (position, newState) {
     this.observableGrid[position.x][position.y] = newState

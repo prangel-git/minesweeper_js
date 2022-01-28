@@ -2,6 +2,11 @@
  * Grid for where mines are located
  */
 class Grid {
+  /**
+   * Builds an empty grid with a given width and height.
+   * @param {Number} width integer
+   * @param {Number} height integer
+   */
   constructor (width, height) {
     this.width = width
     this.height = height
@@ -25,8 +30,8 @@ class Grid {
   }
 
   /**
- * Clear the mines iin positions
- * @param {[Position]} positions
+ * Clear the mines in positions
+ * @param {Position[]} positions An array of positions
  */
   clearMines (positions) {
     positions.forEach(pos => {

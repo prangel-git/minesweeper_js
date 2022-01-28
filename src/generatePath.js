@@ -3,9 +3,9 @@ const { Position, positionAfterCommand, isPositionInBounds } = require('./Positi
 
 /**
  * Creates a random path from the bottom to the top of the grid
- * @parem {int} width
- * @param {int} height
- * @returns a valid solution path for that grid
+ * @param {Integer} width integer
+ * @param {Integer} height integer
+ * @returns a valid solution path in the bounds given by with and height
  */
 function generatePath (width, height) {
   const validPath = [new Position(getRandomInt(width), 0)]

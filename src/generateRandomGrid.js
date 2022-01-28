@@ -3,10 +3,10 @@ const { Position } = require('./Position')
 
 /**
  *
- * @param {Integer} width
- * @param {Integer} height
+ * @param {Number} width integer
+ * @param {Number} height
  * @param {Number} mineProbability
- * @returns A Grid with mines at random positions.
+ * @returns A Grid bounded by width and height with mines at random positions. The probability of a mine is given by mineProbability
  */
 function generateRandomGrid (width, height, mineProbability) {
   const grid = new Grid(width, height)

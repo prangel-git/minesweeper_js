@@ -1,7 +1,7 @@
 /**
  * Creates an (x,y) position
- * @param {integer} x
- * @param {integer} y
+ * @param {Number} x an integer containing x coordinate
+ * @param {Number} y an integer containing y coordiante
  */
 function Position (x, y) {
   this.x = x
@@ -11,7 +11,7 @@ function Position (x, y) {
 /**
  *
  * @param {Position} position
- * @param {UP, DOWN, LEFT, RIGHT} command
+ * @param {String} command can be 'UP, 'DOWN', 'LEFT', 'RIGHT'
  * @returns The result of moving from position after receiving command
  */
 function positionAfterCommand (position, command) {
@@ -51,7 +51,7 @@ function areNeighbours (positionA, positionB) {
 
 /**
  *
- * @param {[Position]]} positions
+ * @param {Position[]} positions A list of positions to check.
  * @returns true iff the positions form a path
  */
 function isPath (positions) {
@@ -68,9 +68,9 @@ function isPath (positions) {
 
 /**
  *
- * @parem {int} width
- * @param {int} height
- * @param {[Position]} positions
+ * @param {Number} width an integer
+ * @param {Number} height an integer
+ * @param {Position[]} positions a list of positions
  * @returns true iff the positions for a valid path in the grid
  */
 function isValidPath (width, height, positions) {
@@ -89,8 +89,8 @@ function isValidPath (width, height, positions) {
 
 /**
    *
-   * @parem {int} width
-   * @param {int} height
+   * @param {Number} width an integer
+   * @param {Number} height an integer
    * @param {Position} position
    * @returns true iff the position is in the bounds of width and height
    */
@@ -98,6 +98,13 @@ function isPositionInBounds (width, height, position) {
   return position.x >= 0 && position.x < width && position.y >= 0 && position.y < height
 }
 
+/**
+ *
+ * @param {Position[]} positions
+ * @param {Number} width
+ * @param {Number} height
+ * @returns true iff all the positions are bounded by width and height
+ */
 function ArePositionsBounded (positions, width, height) {
   let arePositionsInBounds = true
   for (let i = 0; i < positions.length; i++) {
